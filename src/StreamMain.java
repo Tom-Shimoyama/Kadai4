@@ -30,10 +30,10 @@ public class StreamMain {
         double averageResult = numList.stream().mapToDouble(a -> a).average().orElse(0);
         System.out.println("リストの平均値は" + averageResult + "です。");
 
-        List<Integer> evennamberResult = numList.stream().filter(i ->i%2==0).sorted().toList();
+        List<Integer> evenNumberResult = numList.stream().filter(i ->i%2==0).sorted().toList();
         long countResult = numList.stream().filter(i ->i%2==0).count();
         System.out.println("リストの偶数を表示します。");
-        System.out.println(evennamberResult);
+        System.out.println(evenNumberResult);
         System.out.println("偶数の値は" + countResult + "つです。");
 
 
